@@ -1,0 +1,210 @@
+version: 5
+environments:
+  default:
+    channels:
+    - url: https://conda.anaconda.org/conda-forge/
+    packages:
+      linux-64:
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/_libgcc_mutex-0.1-conda_forge.tar.bz2
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/_openmp_mutex-4.5-2_gnu.tar.bz2
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/ca-certificates-2024.7.4-hbcca054_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/dart-sass-1.58.3-ha770c72_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/deno-1.41.0-hfc7925d_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/deno-dom-0.1.35-hd9586b0_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/esbuild-0.19.2-ha770c72_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libgcc-ng-14.1.0-h77fa898_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libgomp-14.1.0-h77fa898_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/openssl-3.3.1-h4bc722e_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/pandoc-3.2.1-ha770c72_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/quarto-1.5.55-ha770c72_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/typst-0.11.0-he8a937b_0.conda
+packages:
+- kind: conda
+  name: _libgcc_mutex
+  version: '0.1'
+  build: conda_forge
+  subdir: linux-64
+  url: https://conda.anaconda.org/conda-forge/linux-64/_libgcc_mutex-0.1-conda_forge.tar.bz2
+  sha256: fe51de6107f9edc7aa4f786a70f4a883943bc9d39b3bb7307c04c41410990726
+  md5: d7c89558ba9fa0495403155b64376d81
+  license: None
+  size: 2562
+  timestamp: 1578324546067
+- kind: conda
+  name: _openmp_mutex
+  version: '4.5'
+  build: 2_gnu
+  build_number: 16
+  subdir: linux-64
+  url: https://conda.anaconda.org/conda-forge/linux-64/_openmp_mutex-4.5-2_gnu.tar.bz2
+  sha256: fbe2c5e56a653bebb982eda4876a9178aedfc2b545f25d0ce9c4c0b508253d22
+  md5: 73aaf86a425cc6e73fcf236a5a46396d
+  depends:
+  - _libgcc_mutex 0.1 conda_forge
+  - libgomp >=7.5.0
+  constrains:
+  - openmp_impl 9999
+  license: BSD-3-Clause
+  license_family: BSD
+  size: 23621
+  timestamp: 1650670423406
+- kind: conda
+  name: ca-certificates
+  version: 2024.7.4
+  build: hbcca054_0
+  subdir: linux-64
+  url: https://conda.anaconda.org/conda-forge/linux-64/ca-certificates-2024.7.4-hbcca054_0.conda
+  sha256: c1548a3235376f464f9931850b64b02492f379b2f2bb98bc786055329b080446
+  md5: 23ab7665c5f63cfb9f1f6195256daac6
+  license: ISC
+  size: 154853
+  timestamp: 1720077432978
+- kind: conda
+  name: dart-sass
+  version: 1.58.3
+  build: ha770c72_1
+  build_number: 1
+  subdir: linux-64
+  url: https://conda.anaconda.org/conda-forge/linux-64/dart-sass-1.58.3-ha770c72_1.conda
+  sha256: a94f8024ac8a09cbf265c62d2bd57e709802868ef656c6cafe5864ed20bf94af
+  md5: d54982a58cd9be3d00a7efe76ba6f60c
+  license: MIT
+  license_family: MIT
+  size: 2961769
+  timestamp: 1683598364427
+- kind: conda
+  name: deno
+  version: 1.41.0
+  build: hfc7925d_0
+  subdir: linux-64
+  url: https://conda.anaconda.org/conda-forge/linux-64/deno-1.41.0-hfc7925d_0.conda
+  sha256: 0b68555ab0a01d86b1e9a5eeb3d783c784bd91226c388ad2f65aae12744999ad
+  md5: 8d6e6bd74055bd30c88d3a678395a7e9
+  depends:
+  - libgcc-ng >=12
+  license: MIT
+  license_family: MIT
+  size: 39040588
+  timestamp: 1709747957637
+- kind: conda
+  name: deno-dom
+  version: 0.1.35
+  build: hd9586b0_1
+  build_number: 1
+  subdir: linux-64
+  url: https://conda.anaconda.org/conda-forge/linux-64/deno-dom-0.1.35-hd9586b0_1.conda
+  sha256: 386c157bf2eebe4fc58e63c26784d084eaa71cf1020257c30a430624631415fd
+  md5: 263ee0870b18b013d9ec8539113ac69f
+  depends:
+  - deno >=1.24.2
+  license: MIT
+  license_family: MIT
+  size: 1062480
+  timestamp: 1682953401972
+- kind: conda
+  name: esbuild
+  version: 0.19.2
+  build: ha770c72_0
+  subdir: linux-64
+  url: https://conda.anaconda.org/conda-forge/linux-64/esbuild-0.19.2-ha770c72_0.conda
+  sha256: bb6dee100b3f62ee088a212834c9d47ad158f3fc678ff595e402803db5fab871
+  md5: 8fa87b764cf6143cb66e9cc3548b186a
+  license: MIT
+  license_family: MIT
+  size: 3376650
+  timestamp: 1693243729127
+- kind: conda
+  name: libgcc-ng
+  version: 14.1.0
+  build: h77fa898_0
+  subdir: linux-64
+  url: https://conda.anaconda.org/conda-forge/linux-64/libgcc-ng-14.1.0-h77fa898_0.conda
+  sha256: b8e869ac96591cda2704bf7e77a301025e405227791a0bddf14a3dac65125538
+  md5: ca0fad6a41ddaef54a153b78eccb5037
+  depends:
+  - _libgcc_mutex 0.1 conda_forge
+  - _openmp_mutex >=4.5
+  constrains:
+  - libgomp 14.1.0 h77fa898_0
+  license: GPL-3.0-only WITH GCC-exception-3.1
+  license_family: GPL
+  size: 842109
+  timestamp: 1719538896937
+- kind: conda
+  name: libgomp
+  version: 14.1.0
+  build: h77fa898_0
+  subdir: linux-64
+  url: https://conda.anaconda.org/conda-forge/linux-64/libgomp-14.1.0-h77fa898_0.conda
+  sha256: 7699df61a1f6c644b3576a40f54791561f2845983120477a16116b951c9cdb05
+  md5: ae061a5ed5f05818acdf9adab72c146d
+  depends:
+  - _libgcc_mutex 0.1 conda_forge
+  license: GPL-3.0-only WITH GCC-exception-3.1
+  license_family: GPL
+  size: 456925
+  timestamp: 1719538796073
+- kind: conda
+  name: openssl
+  version: 3.3.1
+  build: h4bc722e_2
+  build_number: 2
+  subdir: linux-64
+  url: https://conda.anaconda.org/conda-forge/linux-64/openssl-3.3.1-h4bc722e_2.conda
+  sha256: b294b3cc706ad1048cdb514f0db3da9f37ae3fcc0c53a7104083dd0918adb200
+  md5: e1b454497f9f7c1147fdde4b53f1b512
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - ca-certificates
+  - libgcc-ng >=12
+  constrains:
+  - pyopenssl >=22.1
+  license: Apache-2.0
+  license_family: Apache
+  size: 2895213
+  timestamp: 1721194688955
+- kind: conda
+  name: pandoc
+  version: 3.2.1
+  build: ha770c72_0
+  subdir: linux-64
+  url: https://conda.anaconda.org/conda-forge/linux-64/pandoc-3.2.1-ha770c72_0.conda
+  sha256: 130bcefaeeb55ed68ea4403d45b21105390292a2e3167779da099e241d713109
+  md5: b39b12d3809e4042f832b76192e0e7e8
+  license: GPL-2.0-or-later
+  license_family: GPL
+  size: 20850791
+  timestamp: 1719300679855
+- kind: conda
+  name: quarto
+  version: 1.5.55
+  build: ha770c72_0
+  subdir: linux-64
+  url: https://conda.anaconda.org/conda-forge/linux-64/quarto-1.5.55-ha770c72_0.conda
+  sha256: b5eccf81660520c3dcf24c0cdee28cbc78ccafc3162a24412cff388f3b85ec1d
+  md5: 9ea2162c896bb43b500012f2a9d9f2d9
+  depends:
+  - dart-sass
+  - deno >=1.41.0,<1.41.1.0a0
+  - deno-dom >=0.1.35,<0.1.36.0a0
+  - esbuild
+  - pandoc >=3.2.1,<3.2.2.0a0
+  - typst 0.11.0.*
+  license: GPL-2.0-or-later
+  size: 15720754
+  timestamp: 1722532945632
+- kind: conda
+  name: typst
+  version: 0.11.0
+  build: he8a937b_0
+  subdir: linux-64
+  url: https://conda.anaconda.org/conda-forge/linux-64/typst-0.11.0-he8a937b_0.conda
+  sha256: e0be4b66c486a15341d7309744ca94c51dbf0c3914c05cbf2bd796aac0c510c5
+  md5: f6ac8c8ab4a4c9ed0ec710e3f5fa3954
+  depends:
+  - libgcc-ng >=12
+  - openssl >=3.2.1,<4.0a0
+  license: Apache-2.0
+  license_family: Apache
+  size: 11632673
+  timestamp: 1710532616618

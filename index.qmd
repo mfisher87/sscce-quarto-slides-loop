@@ -1,0 +1,32 @@
+---
+title: "Demo: looping slide deck"
+subtitle: "💫 Wheee! 💫"
+format:
+  revealjs: default
+---
+
+## Foo
+
+```{mermaid}
+gantt
+  Foo     :active, magicstring, 2024-01, 2024-02 
+```
+
+
+## Magicstring
+
+This header :point_up: is critical. If I change one character, the bug no
+longer reproduces. It must match, case-insensitive, the ID of an element in the
+Mermaid diagram.  Any string will work. Case doesn't matter.
+
+**This slide will never be displayed; instead, the slide deck will loop from
+the beginning.**
+
+The content below this point doesn't matter.
+
+
+# More slides!
+
+---
+
+Something!
